@@ -1,0 +1,6 @@
+token:
+  empiration_time: 86400000
+  secret: asdfjkl;asdfjkl;asdfjkl;asdfjkl;asdfjkl;asdfjkl
+
+gateway:
+  ip: 127.0.0.1
