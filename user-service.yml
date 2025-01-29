@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: "{cipher}AYAw4dJ6yxJprWn1TZF5yxsPHpuor8vINSIgzD7npbZcEENQw6huIyqK6hsrajVlnfSqvYRMpTLivh0ezK87xnoM7IvfP0YTQx2EauxzZX8FadEpt+WIg6D34E26gTmk2b/fVnyjfFcssKuzqV0A3uPGhUxz7FMU3MHOgBtCYuKq30X/bFgo/FMBmwTZF7HHrKHF4VfQ0F/yBk9Q7lfwgKak6120+GLijkiUhtGhGPT0XqhWYlIJmkmzPCGQSguhouaqcdD5Vw0zSzAeCSFshVx9cutDnLpSba3YFfYb6hmK9MfLSH+BhofLGCSu54nTNEl5tL5Qq27J5Vfm2f9FuRBlcimTwk90Cak1Wzj73l3/w8a6xaa/fGeht2ku2nos7WF1LZ+BDHfAGL1O9LbNByEnLvH4z6XUXTqwjHWzbQ/9iaX+BHF4o6BRGkbQsK+B+w8rK02eVGdx0inOwrGRt8Dl0ekebxVJ6KmFZGrxKoRdkvrt4Tp5ITXCMl4CnoKCbD51F358p8KmZ6RBrCRgliMweVi9Je3Dc9JHGWqI1yxoHw=="
+
+token:
+  expiration_time: 86400000
+  secret: asdfjkl;asdfjkl;asdfjkl;asdfjkl;asdfjkl;asdfjkl-native_ecommerce
+
+gateway:
+  ip: 127.0.0.1
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    orders_is_empty: There is no item.
